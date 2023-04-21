@@ -6,32 +6,31 @@ import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
 
 const menuitems = [
   {
-    title: "Home",
-    path: "/",
+    title: "Features",
+    path: "#",
+    children: [
+      { title: "Action", path: "/" },
+      { title: "Another action", path: "#" },
+      { title: "Dropdown Submenu", path: "#" },
+      { title: "404 Page", path: "/404" },
+    ],
+  },
+  {
+    title: "Pricing",
+    path: "/pricing",
   },
   {
     title: "About",
     path: "/about",
   },
   {
-    title: "Services",
-    path: "#",
-    children: [
-      { title: "Home Inspection", path: "/services/home-inspection" },
-      { title: "Heating & Furnace", path: "/services/heating-furnace" },
-      { title: "AC & Cooling", path: "/services/ac-cooling" },
-      { title: "Commercial Solutions", path: "/services/commercial" },
-      { title: "Warranty", path: "/services/warranty" },
-    ],
-  },
-  {
     title: "Blog",
     path: "/blog",
   },
   {
-    title: "Contact Us",
+    title: "Contact",
     path: "/contact",
-  }
+  },
 ];
 ---
 
@@ -40,8 +39,8 @@ const menuitems = [
     <Astronav>
       <div class="flex w-full lg:w-auto items-center justify-between">
         <a href="/" class="text-lg"
-          ><span class="font-bold text-slate-800" style="color:tomato;">Red Ant</span><span
-            class="text-slate-500" style="color: darkcyan;">&nbsp Heating and Cooling Services</span
+          ><span class="font-bold text-slate-800">Astro</span><span
+            class="text-slate-500">ship</span
           >
         </a>
         <div class="block lg:hidden">
@@ -74,15 +73,14 @@ const menuitems = [
             ))
           }
         </ul>
-        <div class="lg:hidden flex items-center mt-3 gap-4" style="visibility: hidden;">
+        <div class="lg:hidden flex items-center mt-3 gap-4">
           <Link href="#" style="muted" block size="md">Log in</Link>
           <Link href="#" size="md" block>Sign up</Link>
         </div>
       </MenuItems>
     </Astronav>
     <div>
-      <!-- removed the login/signup for now -->
-      <div class="hidden lg:flex items-center gap-4" style="visibility:hidden">
+      <div class="hidden lg:flex items-center gap-4">
         <a href="#">Log in</a>
         <Link href="#" size="md">Sign up</Link>
       </div>
