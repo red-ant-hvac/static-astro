@@ -5,18 +5,18 @@ licenses:
         caption: Saskatoon snow
         alt: Saskatoon snow
         credit: Photo by Joshua Reddekopp on Unsplash
-        credit-html: Photo by <a href="https://unsplash.com/@joshuaryanphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Joshua Reddekopp</a> on <a href="https://unsplash.com/photos/wRrQxcGMtDE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        creditHtml: Photo by <a href="https://unsplash.com/@joshuaryanphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Joshua Reddekopp</a> on <a href="https://unsplash.com/photos/wRrQxcGMtDE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
     
     - &img01
         src: /assets/01-saskatoon01.jpg
         caption: Saskatoon skyline
         alt: Saskatoon skyline
         credit: Photo by Joshua Reddekopp on Unsplash
-        credit-html: Photo by <a href="https://unsplash.com/@joshuaryanphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Joshua Reddekopp</a> on <a href="https://unsplash.com/photos/wRrQxcGMtDE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        creditHtml: Photo by <a href="https://unsplash.com/@joshuaryanphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Joshua Reddekopp</a> on <a href="https://unsplash.com/photos/wRrQxcGMtDE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
     
     - &img02
         src: /assets/02-saskatoon02.jpg
         caption: Saskatoon scenery
         alt: Saskatoon scenery
         credit: Photo by me
-        credit-html: Photo by me
+        creditHtml: Photo by me
