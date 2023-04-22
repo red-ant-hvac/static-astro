@@ -18,8 +18,8 @@ const resolvedImageWithDomain = new URL(
 const { title } = Astro.props;
 
 const makeTitle = title
-  ? title + " | " + "Astroship"
-  : "Astroship - Starter Template for Astro with Tailwind CSS";
+  ? title + " | " + "Red Ant HVAC"
+  : "Red Ant HVAC - Affordable Comfort for Every Home";
 ---
 
 <!DOCTYPE html>
@@ -33,22 +33,18 @@ const makeTitle = title
     <!-- <link rel="preload" as="image" href={src} alt="Hero" /> -->
     <SEO
       title={makeTitle}
-      description="Astroship is a starter website template for Astro built with TailwindCSS."
+      description="Red Ant HVAC provides affordable heating, ventilation, and air conditioning services for homes and businesses in Saskatoon"
       canonical={canonicalURL}
-      twitter={{
-        creator: "@surjithctly",
-        site: "@web3templates",
-        card: "summary_large_image",
-      }}
+      
       openGraph={{
         basic: {
           url: canonicalURL,
           type: "website",
-          title: `Astroship - Starter Template for Astro`,
+          title: `Red Ant HVAC - Affordable Comfort for Every Home`,
           image: resolvedImageWithDomain,
         },
         image: {
-          alt: "Astroship Homepage Screenshot",
+          alt: "Red Ant HVAC Homepage Screenshot",
         },
       }}
     />
