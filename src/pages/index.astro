@@ -5,10 +5,63 @@ import Landing from "@components/landing.astro";
 import Intro from "@components/intro.astro";
 import Layout from "@layouts/Layout.astro";
 ---
+<style>
+
+  .panel {
+    opacity: 0.2;
+    filter: grayscale(100%);
+    transition: opacity 0.5s, filter 0.5s;
+  }
+
+  .panel.active {
+    opacity: 1;
+    filter: grayscale(0%);
+  }
+
+  .landing {
+    background: #ffffff;
+  }
+  .intro {
+    background: #d85fba;
+  }
+  .features {
+    background: #ffffff;
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const panels = document.querySelectorAll(".panel");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("active");
+          } else {
+            entry.target.classList.remove("active");
+          }
+        });
+      },
+      {
+        threshold: 0.5, // Adjust this value to control when the panel is considered "active"
+      }
+    );
+
+    panels.forEach((panel) => observer.observe(panel));
+  });
+</script>
+
 <Layout title="">
   <Container>
-    <Landing class="panel" />
-    <Intro class="panel" />
-    <Features class="panel" />
+    <div class="panel landing" >
+      <Landing />
+    </div>
+    <div class="panel intro" >
+      <Intro />
+    </div>
+    <div class="panel features" >
+      <Features />
+    </div>
   </Container>
 </Layout>
