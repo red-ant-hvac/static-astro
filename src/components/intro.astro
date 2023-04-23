@@ -1,6 +1,6 @@
 ---
 import { Picture } from "@astrojs/image/components";
-import chillImage from "assets/03-sketch00.webp";
+import chillImage from "assets/webp/03-sketch00.webp";
 import Link from "@components/ui/link.astro";
 import { Icon } from "astro-icon";
 ---
@@ -10,7 +10,7 @@ import { Icon } from "astro-icon";
   <div class="py-6 md:order-1 hidden md:block">
     <Picture
       src={chillImage}
-      alt="Astronaut in the air"
+      alt="an astronaut lounging in a tropical resort in space, vaporwave"
       widths={[200, 400, 600]}
       aspectRatio="4:3"
       sizes="(max-width: 800px) 100vw, 620px"
@@ -21,7 +21,7 @@ import { Icon } from "astro-icon";
       <p class="text-xs text-gray-500 flex gap-1 ">
         <Icon name="ic:baseline-photo-camera" class="w-4 h-4" />
         <span id="photo-credit">
-          Art by DALL-E of openAI
+          Art by DALL-E2
         </span>
       </p>
     </div>

@@ -1,4 +1,5 @@
 import { defineConfig } from "astro/config";
+import { astroImageTools } from "astro-imagetools";
 import tailwind from "@astrojs/tailwind";
 import image from "@astrojs/image";
 import mdx from "@astrojs/mdx";
@@ -11,7 +12,13 @@ export default defineConfig({
     plugins: [yaml()]
   },
   site: "https://astroship.web3templates.com",
-  integrations: [tailwind(), image({
+  integrations: [
+    tailwind(), 
+    image({
     serviceEntryPoint: "@astrojs/image/sharp"
-  }), mdx(), sitemap()]
+  }), 
+    mdx(), 
+    sitemap(),
+    astroImageTools
+  ]
 });
