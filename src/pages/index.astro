@@ -8,14 +8,12 @@ import Layout from "@layouts/Layout.astro";
 <style>
 
   .panel {
-    opacity: 0.2;
-    filter: grayscale(100%);
     transition: opacity 0.5s, filter 0.5s;
   }
 
-  .panel.active {
-    opacity: 1;
-    filter: grayscale(0%);
+  .panel.inactive {
+    opacity: 0.2;
+    filter: grayscale(100%);
   }
 
   .landing {
@@ -37,14 +35,14 @@ import Layout from "@layouts/Layout.astro";
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add("active");
+            entry.target.classList.remove("inactive");
           } else {
-            entry.target.classList.remove("active");
+            entry.target.classList.add("inactive");
           }
         });
       },
       {
-        threshold: 0.2, // Adjust this value to control when the panel is considered "active"
+        threshold: 0.05, // Adjust this value to control when the panel is considered "active"
       }
     );
 
