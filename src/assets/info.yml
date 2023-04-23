@@ -1,21 +1,21 @@
 licenses:
   img:
     - &img00
-        src: /assets/00-saskatoon00.webp
+        src: /assets/webp/00-saskatoon00.webp
         caption: Saskatoon snow
         alt: Saskatoon snow
         credit: Photo by Joshua Reddekopp on Unsplash
         creditHtml: Photo by <a href="https://unsplash.com/@joshuaryanphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Joshua Reddekopp</a> on <a href="https://unsplash.com/photos/wRrQxcGMtDE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
     - &img01
-        src: /assets/01-saskatoon01.webp
+        src: /assets/webp/01-saskatoon01.webp
         caption: Saskatoon skyline
         alt: Saskatoon skyline
         credit: Photo by Joshua Reddekopp on Unsplash
         creditHtml: Photo by <a href="https://unsplash.com/@joshuaryanphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Joshua Reddekopp</a> on <a href="https://unsplash.com/photos/wRrQxcGMtDE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
     - &img02
-        src: /assets/02-saskatoon02.webp
+        src: /assets/webp/02-saskatoon02.webp
         caption: Saskatoon scenery
         alt: Saskatoon scenery
         credit: Photo by me
