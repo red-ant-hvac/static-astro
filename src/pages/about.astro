@@ -15,18 +15,83 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
   <Container>
     <Sectionhead>
       <Fragment slot="title">About</Fragment>
-      <Fragment slot="desc">We are a small passionate team.</Fragment>
+      <Fragment slot="desc">Your community HVAC pro</Fragment>
     </Sectionhead>
 
     <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
       <h2 class="font-bold text-3xl text-gray-800">
-        Empowering the world with Astro.
+        Bringing comfort to your home
       </h2>
-      <p class="text-lg leading-relaxed text-slate-500">
-        We're a multi-cultural team from around the world! We come from diverse
-        backgrounds, bringing different personalities, experiences and skills to
-        the job. This is what makes our team so special.
-      </p>
+      <div class="post-content">
+        <p>
+          At Red Ant Heating and Cooling Services, we’re passionate about
+          providing top-notch heating, ventilation, and air conditioning (HVAC)
+          services to the residents of Saskatoon, Canada, and its surrounding
+          areas. Our team of highly skilled and certified technicians is
+          committed to delivering exceptional customer service and ensuring your
+          home or office stays comfortable all year round.
+        </p>
+
+        <h3 class="mt-6 text-xl font-bold text-gray-800"
+        id="our-mission">Our Mission</h3>
+
+        <p>
+          Our mission is to become the leading provider of HVAC and furnace
+          services in the region by consistently exceeding our customers’
+          expectations. We achieve this by investing in the latest technology,
+          employing highly trained technicians, and focusing on delivering
+          personalized solutions tailored to each customer’s unique needs.
+        </p>
+
+        <h3 class="mt-6 text-xl font-bold text-gray-800"
+         id="our-expertise">Our Expertise</h3>
+
+        <p>
+          Our team has more than 20 years of combined experience in the HVAC and
+          furnace industry, and our technicians hold valid refrigeration
+          technician and gas fitter tickets. We pride ourselves on staying
+          up-to-date with the latest industry advancements and best practices,
+          ensuring that we provide our customers with the most efficient and
+          reliable solutions.
+        </p>
+
+        <h3 class="mt-6 text-xl font-bold text-gray-800"
+         id="our-services">Our Services</h3>
+
+        <p>
+          We specialize in the installation, repair, and maintenance of HVAC
+          systems and furnaces for both residential and commercial clients. Our
+          services include:
+        </p>
+
+        <ul>
+          <li>Air conditioning installation and repair</li>
+          <li>Furnace installation and repair</li>
+          <li>Preventative maintenance services</li>
+          <li>Ductwork cleaning and maintenance</li>
+          <li>Indoor air quality solutions</li>
+          <li>Emergency repairs and services</li>
+        </ul>
+
+        <!-- 
+    ## Customer Testimonials
+    
+    *"[Insert a quote from a satisfied customer describing their positive experience with your company.]"* - **Customer Name**
+    
+    *"[Another quote from a customer praising your team's professionalism, expertise, and quality of service.]"* - **Customer Name** 
+    -->
+
+        <h3 class="mt-6 text-xl font-bold text-gray-800"
+         id="contact-us">Contact Us</h3>
+
+        <p>
+          If you have any questions about our services or would like to schedule
+          an appointment, please don’t hesitate to get in touch with us. You can
+          reach us by phone at 306-850-2098 or through our <a
+            href="/contact">Contact Us</a
+          > page. We look forward to hearing from you!
+        </p>
+      </div>
     </div>
     <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-4xl mt-12">
       {
@@ -47,9 +112,7 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
             </div>
 
             <div class="mt-4 text-center">
-              <h2 class="text-lg text-gray-800">
-                {teamMemberEntry.data.name}
-              </h2>
+              <h2 class="text-lg text-gray-800">{teamMemberEntry.data.name}</h2>
               <h3 class="text-sm text-slate-500">
                 {teamMemberEntry.data.title}
               </h3>
