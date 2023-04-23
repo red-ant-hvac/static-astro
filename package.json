@@ -24,6 +24,7 @@
     "astro-imagetools": "^0.8.1",
     "astro-navbar": "^1.1.5",
     "astro-seo": "^0.7.0",
+    "file-type": "^18.2.1",
     "find-cache-dir": "^4.0.0",
     "object-hash": "^3.0.0",
     "potrace": "^2.1.8",
