@@ -6,7 +6,7 @@ import { Icon } from "astro-icon";
 ---
 
 <main
-  class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24">
+  class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24 mb-12">
   <div class="py-6 md:order-1 hidden md:block">
     <Picture
       src={chillImage}
@@ -26,14 +26,14 @@ import { Icon } from "astro-icon";
       </p>
     </div>
   </div>
-  <div>
+  <div class="m-3">
     <h1 class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter">
       Make Every Zone Your Comfort Zone
     </h1>
     <h2 class="text-4xl lg:text-5xl xl:text-6xl font-semibold lg:tracking-tight xl:tracking-tighter mt-4">
       Affordable Comfort for Every Home
     </h2>
-    <p 
+    <p
       class="text-lg mt-4 text-slate-600 max-w-xl"
       style="color:cornsilk">
       Our HVAC services provide the perfect balance of affordability and comfort, ensuring a cozy atmosphere in your home without breaking the bank.
@@ -42,7 +42,6 @@ import { Icon } from "astro-icon";
       We also offer business solutions for refrigeration and cooling services.
     </p>
 
-    
     <div class="mt-6 flex flex-col sm:flex-row gap-3">
       <Link
         href="/contact"
