@@ -1,5 +1,6 @@
 ---
 import { Picture } from "@astrojs/image/components";
+import { Image } from "@astrojs/image/components";
 ---
 <div class="mt-24">
   <h2 class="text-center text-slate-500">Your Comfort, Your Choice</h2>
@@ -24,24 +25,20 @@ import { Picture } from "@astrojs/image/components";
       decoding={"async"}
     />
 
-    <Picture
+    <Image
       src="/logo/bryant.svg"
       alt="Bryant"
-      sizes="(max-width: 100px) 50vw, 200px"
-      widths={[50, 100, 200]}
+      quality={80}
+      width={200}
       aspectRatio={"16:9"}
-      loading={"lazy"}
-      decoding={"async"}
     />
 
-    <Picture
+    <Image
       src="/logo/lennox.svg"
       alt="Lennox"
-      sizes="(max-width: 100px) 50vw, 200px"
-      widths={[50, 100, 200]}
+      quality={80}
+      width={200}
       aspectRatio={"49:16"}
-      loading={"lazy"}
-      decoding={"async"}
     />
 
 
