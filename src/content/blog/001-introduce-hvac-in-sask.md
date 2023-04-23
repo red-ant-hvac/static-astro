@@ -4,9 +4,8 @@ title: "Introducing Our HVAC Services to Saskatoon"
 snippet: "We're excited to announce that our heating, ventilation, and air conditioning services are now available to homes and businesses in Saskatoon."
 tags: ["HVAC", "Saskatoon", "Heating", "Cooling", "Ventilation", "Business"]
 image: {
-    src: "src/assets/img/04-ac01.jpg",
-    alt: "We are air conditioned for your comfort"
-}
+    src: "/webp/04-ac01.webp",
+    alt: "We are air-conditioned for your comfort"}
 category: "Announcements"
 publishDate: "2023-04-18"
 author: "Gideon P. Turing"
