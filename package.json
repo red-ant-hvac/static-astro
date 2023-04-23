@@ -19,7 +19,6 @@
     "@iconify/json": "^2.2.54",
     "astro": "^2.3.0",
     "astro-feather-icons": "^1.0.2",
-    "astro-imagetools": "^0.8.1",
     "astro-navbar": "^1.1.5",
     "astro-seo": "^0.7.0",
     "rollup": "^3.20.7",

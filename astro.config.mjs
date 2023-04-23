@@ -1,5 +1,4 @@
 import { defineConfig } from "astro/config";
-import { astroImageTools } from "astro-imagetools";
 import tailwind from "@astrojs/tailwind";
 import image from "@astrojs/image";
 import mdx from "@astrojs/mdx";
@@ -19,6 +18,5 @@ export default defineConfig({
   }), 
     mdx(), 
     sitemap(),
-    astroImageTools
   ]
 });
