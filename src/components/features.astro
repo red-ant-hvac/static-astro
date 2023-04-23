@@ -1,0 +1,68 @@
+---
+// @ts-ignore
+import { Icon } from "astro-icon";
+
+const features = [
+  {
+    title: "Expert Installation",
+    description:
+      "Our experienced technicians install air conditioning, heating, and ventilation systems with precision and care, ensuring optimum performance.",
+    icon: "material-symbols:card-travel-outline",
+  },
+  {
+    title: "Affordable Solutions",
+    description:
+      "We provide cost-effective HVAC solutions tailored to your needs, ensuring energy efficiency and lower utility bills.",
+    icon: "bx:bxs-window-alt",
+  },
+  {
+    title: "Reliable Maintenance",
+    description:
+      "Our regular maintenance services keep your HVAC systems running smoothly and efficiently, prolonging their lifespan and saving you money.",
+    icon: "bx:bxs-data",
+  },
+  {
+    title: "Emergency Services",
+    description:
+      "We're available for emergency repairs, ensuring your home or business stays comfortable and safe even when the unexpected happens.",
+    icon: "bx:bxs-bot",
+  },
+  {
+    title: "Commercial Services",
+    description:
+      "From refrigeration and cooling systems to HVAC solutions, we cater to the unique needs of businesses and provide professional services.",
+    icon: "bx:bxs-file-find",
+  },
+  {
+    title: "Customer Satisfaction",
+    description:
+      "We pride ourselves on our commitment to delivering exceptional customer service and ensuring your satisfaction with our work.",
+    icon: "bx:bxs-user",
+  },
+];
+---
+
+<div class="mt-16 md:mt-0">
+  <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
+    Your Go-To HVAC Solutions in <span class="text-primary">Saskatoon</span>
+  </h2>
+  <p class="text-lg mt-4 text-slate-600">
+    Our heating, ventilation, and air conditioning services are designed to provide the best comfort, efficiency, and reliability for homes and businesses in Saskatoon.
+  </p>
+</div>
+
+<div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
+  {
+    features.map((item) => (
+      <div class="flex gap-4 items-start">
+        <div class="mt-1 bg-black rounded-full  p-2 w-8 h-8 shrink-0">
+          <Icon class="text-white" name={item.icon} />
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
+          <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
+        </div>
+      </div>
+    ))
+  }
+</div>
