@@ -20,3 +20,19 @@ licenses:
         alt: Saskatoon scenery
         credit: Photo by me
         creditHtml: Photo by me
+
+    - &blg00
+        src: /assets/webp/04-ac01.webp
+        caption: We are Air Conditioned for your comfort
+        alt: We are Air Conditioned for your comfort
+        credit: Photo by Tim Mossholder on Unsplash
+        creditHtml: Photo by <a href="https://unsplash.com/@timmossholder?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Tim Mossholder</a> on <a href="https://unsplash.com/photos/HdIgbf03tko?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+    - &blg01
+        src: /assets/webp/05-ac02.webp
+        caption: Air Conditioners are not just for cooling
+        alt: Air Conditioner array in Hong Kong
+        credit: Photo by Chromatograph on Unsplash
+        creditHtml: Photo by <a href="https://unsplash.com/@chromatograph?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Chromatograph</a> on <a href="https://unsplash.com/photos/f1f-FQj0k0U?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+
